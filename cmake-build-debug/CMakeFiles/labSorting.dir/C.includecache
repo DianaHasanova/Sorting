@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/labSorting/libs/sortingAlgorithms/sortingAlgorithms.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+time.h
+-
+
+D:/labSorting/main.c
+stdio.h
+-
+libs/sortingAlgorithms/sortingAlgorithms.h
+D:/labSorting/libs/sortingAlgorithms/sortingAlgorithms.h
+

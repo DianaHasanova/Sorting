@@ -1,0 +1,6 @@
+D:/labSorting/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/labSorting/cmake-build-debug/CMakeFiles/labSorting.dir
+D:/labSorting/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/labSorting/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
+D:/labSorting/cmake-build-debug/libs/CMakeFiles/libs.dir
+D:/labSorting/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
