@@ -34,9 +34,18 @@ typedef struct GeneratingFunc {
     char name[64]; // имя генератора, используемое при выводе
 } GeneratingFunc;
 
+typedef struct SortFuncNComp {
+    long long (*sort)(int *a, size_t n); // указатель на функцию сортировки
+    char name[64]; // имя сортировки, используемое при выводе
+} SortFuncNComp;
+
 void checkTime(void (*sortFunc)(int *, size_t),
                void (*generateFunc)(int *, size_t),
                size_t size, char *experimentName);
+
+void checkNComp(long long (*sortFunc)(int *, size_t),
+                void (*generateFunc)(int *, size_t),
+                size_t size, char *experimentName);
 
 
 void inputArray(int *a, size_t n);
@@ -62,5 +71,17 @@ void shellSort(int *a, size_t n);
 
 //цифровая сортировка
 void radixSort(int *a, size_t n);
+
+long long getSelectionSortNComp(int *a, size_t n);
+
+long long getBubbleSortNComp(int *a, size_t n);
+
+long long getInsertionSortNComp(int *a, size_t n);
+
+long long getCombSortNComp(int *a, size_t n);
+
+long long getShellSortNComp(int *a, size_t n);
+
+long long getRadixSortNComp(int *a, size_t n);
 
 #endif //LABSORTING_SORTINGALGORITHMS_H
